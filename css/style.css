@@ -260,6 +260,11 @@ ul
 {
     margin-right: 15px;
 }
+.aside .nav li a.active {
+    color: var(--skin-color);
+    font-weight: 700; 
+}
+
 /* home */
 .home 
 {
