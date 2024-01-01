@@ -312,6 +312,22 @@ h3.my-proffession
     text-align: center;
     position: relative;
 }
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-img img {
+    animation: slideInFromTop 1s ease-out; /* Adjust the duration and easing as needed */
+}
+
+
 .home-img::after
 {
     content: '';
@@ -607,8 +623,8 @@ h3.my-proffession
 }
 .contact .contact-info-item
 {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 33%;
+    max-width: 33%;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -618,6 +634,15 @@ h3.my-proffession
     display: inline-block;
 }
 .contact .contact-info-item .icon .fa
+{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item .icon_ng
+{
+    display: inline-block;
+}
+.contact .contact-info-item .icon_ng .fab
 {
     font-size: 25px;
     color: var(--skin-color);
@@ -639,7 +664,7 @@ h3.my-proffession
 }
 .contact .contact-info-item a
 {
-    color: pink;
+    color: var(--text-black-700);
 }
 .contact .contact-form
 {
